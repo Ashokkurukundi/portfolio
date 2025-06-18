@@ -1,124 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashok Kurukundhi | Frontend Lead</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/ashok.jpg" alt="">
+  <!-- NAVBAR -->
+  <nav class="glass-nav">
+    <div class="left">
+      <a href="/">Ashok Kurukundhi</a>
+      <span class="title-badge">Frontend Lead</span>
+    </div>
+
+    <div class="right">
+      
+      <a href="https://linkedin.com/in/ashokkurukundi" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span class="desktop-only">Linkedin</span>
+      </a>
+      
+      <a href="#contact" class="cta-button">
+        <span>Hire Me</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <div class="greeting">
+          <h1>Hi, I'm Ashok <span class="wave">👋</span></h1>
+          <div class="typing-text">
+            <span id="typing"></span>
+            <span class="cursor">|</span>
+          </div>
         </div>
-        <button class="nav-toggle" aria-label="togglr navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item" href="#" class="nav__link">Home</li>
-                <li class="nav__item" href="#" class="nav__link">My Service</li>
-                <li class="nav__item" href="#" class="nav__link">About Me</li>
-                <li class="nav__item" href="#" class="nav__link">My Work</li>
+        
+        <p class="summary">Frontend Lead with 12+ years of experience building scalable and secure web applications. Specializing in cloud security platforms, FinTech dashboards, and high-performance UI architecture.</p>
+
+        <div class="metrics">
+          <div class="metric">
+            <span class="number" data-target="12">12</span>+
+            <span class="label">Years Experience</span>
+          </div>
+          <div class="metric">
+            <span class="number" data-target="75">15</span>+
+            <span class="label">Projects Delivered</span>
+          </div>
+        </div>
+
+        <div class="links">
+          <a href="#expertise" class="primary-button">
+            <i class="fa-solid fa-code"></i>
+            <span>My Expertise</span>
+          </a>
+          
+          <a href="#experience" class="secondary-button">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Work History</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <div class="image-container">
+          <img src="images/ashok-headshot.webp" alt="Ashok Kurukundhi headshot">
+          <div class="tech-badge angular">
+            <i class="fa-brands fa-angular"></i>
+          </div>
+          <div class="tech-badge react">
+            <i class="fa-brands fa-react"></i>
+          </div>
+          <div class="tech-badge aws">
+            <i class="fa-brands fa-aws"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Expertise -->
+    <section id="expertise" class="expertise-section">
+      <h2>Technical Expertise</h2>
+      <p class="section-description">Deep specialization in frontend architecture with cloud security and FinOps integration</p>
+
+      <div class="expertise-grid">
+        <div class="expertise-card">
+          <div class="icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Cloud Security</h3>
+          <p>Built security visualization platforms for AWS, Azure, and GCP with real-time threat detection and compliance monitoring.</p>
+          <ul class="tech-tags">
+            <li>Spot-Security UI</li>
+            <li>Keylines Integration</li>
+            <li>IAM Visualization</li>
+          </ul>
+        </div>
+
+        <div class="expertise-card">
+          <div class="icon">
+            <i class="fa-solid fa-city"></i>
+          </div>
+          <h3>Smart Cities</h3>
+          <p>Created real-time dashboards for city administration with IoT sensor integration and WebSocket data streaming.</p>
+          <ul class="tech-tags">
+            <li>ICCC Platform</li>
+            <li>Citizen Mobile Apps</li>
+            <li>COVID Monitoring</li>
+          </ul>
+        </div>
+
+        <div class="expertise-card">
+          <div class="icon">
+            <i class="fa-solid fa-jet-fighter-up"></i>
+          </div>
+          <h3>Defense Systems</h3>
+          <p>Architected command-and-control systems for artillery units with automated calculations and sensor integration.</p>
+          <ul class="tech-tags">
+            <li>ACCCS</li>
+            <li>C# Desktop Apps</li>
+            <li>Military Spec</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Skills -->
+    <section class="skills-section">
+      <h2>Technical Skills</h2>
+      <p class="section-description">Comprehensive toolkit for building secure, high-performance applications</p>
+
+      <div class="skills-container">
+        <div class="skills-category">
+          <h3><i class="fa-solid fa-code"></i> Frontend</h3>
+          <div class="skills-list">
+            <span class="skill-item">Angular</span>
+            <span class="skill-item">React.js</span>
+            <span class="skill-item">TypeScript</span>
+            <span class="skill-item">JavaScript (ES6+)</span>
+            <span class="skill-item">HTML5/CSS3</span>
+            <span class="skill-item">SCSS/Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3><i class="fa-solid fa-network-wired"></i> State Management</h3>
+          <div class="skills-list">
+            <span class="skill-item">Redux</span>
+            <span class="skill-item">NgRx</span>
+            <span class="skill-item">Context API</span>
+            <span class="skill-item">RxJS</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3><i class="fa-solid fa-vial"></i> Testing</h3>
+          <div class="skills-list">
+            <span class="skill-item">Jest</span>
+            <span class="skill-item">Cypress</span>
+            <span class="skill-item">Karma</span>
+            <span class="skill-item">Jasmine</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3><i class="fa-solid fa-server"></i> Backend & APIs</h3>
+          <div class="skills-list">
+            <span class="skill-item">Node.js</span>
+            <span class="skill-item">Express.js</span>
+            <span class="skill-item">C#</span>
+            <span class="skill-item">RESTful APIs</span>
+            <span class="skill-item">GraphQL</span>
+            <span class="skill-item">WebSockets</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3><i class="fa-solid fa-cloud"></i> DevOps & Cloud</h3>
+          <div class="skills-list">
+            <span class="skill-item">AWS</span>
+            <span class="skill-item">Docker</span>
+            <span class="skill-item">Jenkins</span>
+            <span class="skill-item">GitHub Actions</span>
+            <span class="skill-item">CI/CD Pipelines</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3><i class="fa-solid fa-database"></i> Databases</h3>
+          <div class="skills-list">
+            <span class="skill-item">MySQL</span>
+            <span class="skill-item">PostgreSQL</span>
+            <span class="skill-item">MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Experience -->
+    <section id="experience" class="experience-section">
+      <h2>Professional Experience</h2>
+      <p class="section-description">Leadership roles in cutting-edge technology projects</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">July 2022 – Present</div>
+          <div class="timeline-content">
+            <h3>Frontend Lead <span class="company">@ NetApp / Flexera, Bangalore</span></h3>
+            <ul class="achievements">
+              <li>Led frontend team enhancing Spot-Security UI, a cloud security platform offering visibility into cloud infrastructure and compliance gaps</li>
+              <li>Implemented streamlined onboarding process allowing customers to set up accounts with single click</li>
+              <li>Integrated new features while improving accessibility and UI performance</li>
+              <li>Developed modular React components with TypeScript and Redux</li>
             </ul>
-        </nav>
-    </header>
-
-    <!-- Intoduction -->
-
-    <section class="into" id="home">
-        <h1 class="section__title section__title--intro">
-            Hi, I am <strong>Ashok Kurukundhi</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">
-            front-end dev
-        </p>
-        <img src="img/ashok-kurukundi-01.jpg" alt="a picture of ashok">
-    </section>
-
-    <!-- My Services -->
-    <section class="my-services" id="services">
-        <h2 class="section__titile section__titile--services">
-            What I do
-        </h2>
-
-        <div class="services">
-            <div class="service">
-                <h3>Design + Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Inventore voluptas praesentium
-                    reiciendis officia magni, tempora quis,
-                    et adipisci repudiandae explicabo incidunt a
-                    nulla nam aut iure voluptates dolor cum earum.</p>
+            <div class="tech-used">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Redux</span>
+              <span>AWS</span>
+              <span>Security</span>
             </div>
-            <div class="service">
-                <h3>E-Commerce</h3>
-                <p>Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Inventore voluptas praesentium
-                    reiciendis officia magni, tempora quis,
-                    et adipisci repudiandae explicabo incidunt a
-                    nulla nam aut iure voluptates dolor cum earum.</p>
-            </div>
-            <div class="service">
-                <h3>WordPress</h3>
-                <p>Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Inventore voluptas praesentium
-                    reiciendis officia magni, tempora quis,
-                    et adipisci repudiandae explicabo incidunt a
-                    nulla nam aut iure voluptates dolor cum earum.</p>
-            </div>
+          </div>
         </div>
 
-        <a href="#work" class="btn">My Work</a>
-    </section>
-
-    <!-- About Me -->
-    <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">
-            Who I am
-        </h2>
-        <p class="section__subtitle section__subtitle--about"></p>
-
-        <div class="about-me__body">
-            <p></p>
-            <p></p>
+        <div class="timeline-item">
+          <div class="timeline-date">Mar 2020 – July 2022</div>
+          <div class="timeline-content">
+            <h3>Deputy Manager – Project: Smart City ICCC Platform <span class="company">@ Bharat Electronics, Bangalore</span></h3>
+            <ul class="achievements">
+              <li>Developed real-time dashboards for city administration with live data visualization</li>
+              <li>Built Angular component libraries used across multiple smart city projects</li>
+              <li>Integrated live data from IoT sensors using WebSockets</li>
+            </ul>
+            <div class="tech-used">
+              <span>Angular</span>
+              <span>TypeScript</span>
+              <span>WebSockets</span>
+              <span>NgRx</span>
+              <span>IoT</span>
+            </div>
+          </div>
         </div>
 
-        <img src="img/ashok-kurukundhi-02.jpg" alt="Ashok leaning againt a bus">
+        <div class="timeline-item">
+          <div class="timeline-date">Aug 2017 – Feb 2020</div>
+          <div class="timeline-content">
+            <h3>Senior Software Engineer – Smart City Citizen Mobile App <span class="company">@ Bharat Electronics, Bangalore</span></h3>
+            <ul class="achievements">
+              <li>Developed Flutter mobile app integrated with REST APIs for citizen services</li>
+              <li>Implemented push notifications and live alert systems</li>
+              <li>Built COVID-19 web monitoring dashboard during pandemic (awarded Key Contributor)</li>
+            </ul>
+            <div class="tech-used">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>REST APIs</span>
+              <span>Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Nov 2012 – Jul 2017</div>
+          <div class="timeline-content">
+            <h3>Software Engineer – Artillery Combat Command-and-Control System (ACCCS) <span class="company">@ Bharat Electronics, Bangalore</span></h3>
+            <ul class="achievements">
+              <li>Created C# desktop application used by Indian Army artillery units</li>
+              <li>Automated artillery calculations and sensor integration</li>
+              <li>Developed under strict security and reliability requirements</li>
+            </ul>
+            <div class="tech-used">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>WPF</span>
+              <span>Military Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- My Work -->
-    <section class="my-work" id="work">
-        <h2 class="section__title">My Work</h2>
-        <p class="section__subtitle"></p>
+    <!-- SECTION 5: Education & Awards -->
+    <section class="education-section">
+      <div class="education-card">
+        <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+        <div class="education-item">
+          <h4>M. S. Ramalah Institute of Technology, Bengaluru</h4>
+          <p>B.E. in Computer Science and Engineering</p>
+          <p class="date">Aug 2008 – Jun 2012 | CGPA: 8.9/10</p>
+        </div>
+      </div>
 
-        <div class="portfolio">
-            <a href="#" class="portfolio__item">
-                <img src="ashok-kurukundhi-02.jpg" alt="" class="portfolio__img">
+      <div class="awards-card">
+        <h3><i class="fa-solid fa-trophy"></i> Awards & Certifications</h3>
+        <div class="award-item">
+          <h4>Key Contributor Award</h4>
+          <p>Bharat Electronics – For rapid development of COVID-19 monitoring dashboard</p>
+        </div>
+        <div class="award-item">
+          <h4>2nd Place Winner, FlexHack 2025</h4>
+          <p>MSP Portal with outstanding UI innovation</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Get In Touch</h2>
+      <p class="section-description">For consulting opportunities or technical discussions</p>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:ashokkurukundi@gmail.com">ashokkurukundi@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+918095365398">+91 80953 65398</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Bangalore, India</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/ashokkurukundi" target="_blank" class="social-link">
+              <i class="fa-brands fa-linkedin"></i>
             </a>
+          </div>
         </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select inquiry type</option>
+              <option value="consulting">Consulting Opportunity</option>
+              <option value="architecture">Architecture Review</option>
+              <option value="speaking">Speaking Engagement</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <a href="mailto:hello@jane.dev" class="footer-link">hello@gmail.com</a>
-        <ul class="social-list">
-            <li class="social-list__item">
-                <a href="https://codepen.io" class="social-list__link"></a>
-            </li>
-            <li class="social-list__item">
-                <a href="https://dribble.com" class="social-list__link"></a>
-            </li>
-            <li class="social-list__item">
-                <a href="https://github.com" class="social-list__link"></a>
-            </li>
-        </ul>
-    </footer>
+  <footer>
+    <p>© 2025 Ashok Kurukundhi. All rights reserved.</p>
+    <p>Built with <i class="fa-solid fa-heart"></i> and modern web technologies</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
