@@ -369,8 +369,8 @@
   
   .tech-badge.angular {
     background-color: #dd0031;
-    top: 40px;
-    left: 40px;
+    top: 100px;
+    left: 5px;
     animation-delay: 0s;
   }
   
@@ -380,11 +380,25 @@
     right: 40px;
     animation-delay: 0.5s;
   }
+
+  .tech-badge.javascript {
+    background-color: #e9e93d;
+    bottom: 60px;
+    left: 15px;
+    animation-delay: 0.5s;
+  }
   
+  .tech-badge.typescript {
+    background-color: #dd0031;
+    top: 30px;
+    left: 30px;
+    animation-delay: 0s;
+  }
+
   .tech-badge.aws {
     background-color: #ff9900;
-    bottom: 20px;
-    left: 50%;
+    bottom: 5px;
+    left: 60%;
     transform: translateX(-50%);
     animation-delay: 1s;
   }
