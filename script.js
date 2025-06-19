@@ -3,8 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const typed = new Typed('#typing', {
     strings: [
       'Frontend Lead',
-      'Cloud Security Specialist',
-      'Smart City Dashboards'
+      'Building Scalable Web Apps',
+      'Optimizing User Experiences',
+      'Code. Secure. Scale.',
+      'Cloud Meets Frontend',
     ],
     typeSpeed: 50,
     backSpeed: 30,
